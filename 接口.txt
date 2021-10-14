@@ -1,0 +1,21 @@
+默认页面
+默认列表接口： allMessageUrl      参数：type 1拦截信息 2预警信息
+签收拦截信息 / 取消预警信息接口： changeStatusUrl    参数：type 1拦截信息 2预警信息 interId签收信息的id
+
+查看更多页面
+历史记录接口：  allMessageUrl       参数：pn页数 num每页个数 type 1拦截信息 2预警信息 status签收状态0全部信息1未签收2已签收
+车牌号搜索接口：  allMessageUrl     参数： pn页数 num每页个数 type 1拦截信息 2预警信息  plateNo车牌号
+导出功能 在传完以上两个接口的情况下另传export=1    
+	例如：pn=1 num=2 type=1 status=0 export=1 或者pn=1 num=3 type=2 plateNo=8 export=1
+
+方案页面
+方案库接口： getSchemeMessageUrl
+启用/暂停方案接口： changeStatusUrl   参数：schemeId方案id   status1启用方案 2暂停方案
+查看方案库点位列表接口： getPointUrl  参数：schemeId方案id  pointStatus1预警点位 2取消预警点位
+选择点位列表：getLocationsUrl
+添加方案页面接口： addSchemeUrl   参数：lyscName方案名称 interPoint拦截点位  warningPoint预警点位  cancelWarningPoint取消预警点位  schemeStatus方案状态
+
+
+
+
+
